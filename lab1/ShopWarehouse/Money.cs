@@ -2,13 +2,28 @@
 
 public class Money : IMoney
 {
+    private static readonly string InvalidFractionExceptionMessage = "Fraction must be <= 100";
+    private static readonly string InvalidSubtractionOperandsExceptioMessage = "Minuend must be >= subtrahend";
+
     public uint Whole { get; set; }
-    public uint Fraction { get; set; }
+    public uint Fraction
+    {
+        get
+        {
+            return this.Fraction;
+        }
+        set
+        {
+            ValidateFraction(value);
+            this.Fraction = value;
+        }
+    }
 
     public Money() { }
 
     public Money(uint whole, uint fraction)
     {
+        ValidateFraction(fraction);
         this.Whole = whole;
         this.Fraction = fraction;
     }
@@ -20,6 +35,7 @@ public class Money : IMoney
 
     public void SetNewSum(uint whole, uint fraction)
     {
+        ValidateFraction(fraction);
         this.Whole = whole;
         this.Fraction = fraction;
     }
@@ -59,9 +75,26 @@ public class Money : IMoney
 
     private static void ValidateMoneySubtraction(Money item1, Money item2)
     {
+        ValidateFractions([item1.Fraction, item2.Fraction]);
         if (item1.Whole < item2.Whole || (item1.Whole == item2.Whole && item1.Fraction < item2.Fraction))
         {
-            throw new InvalidOperationException("Minuend must be >= subtrahend");
+            throw new InvalidOperationException(InvalidSubtractionOperandsExceptioMessage);
+        }
+    }
+
+    private static void ValidateFraction(uint fraction)
+    {
+        if (fraction > 100)
+        {
+            throw new InvalidDataException(InvalidFractionExceptionMessage);
+        }
+    }
+
+    private static void ValidateFractions(uint[] money)
+    {
+        foreach (var item in money)
+        {
+            ValidateFraction(item);
         }
     }
 }

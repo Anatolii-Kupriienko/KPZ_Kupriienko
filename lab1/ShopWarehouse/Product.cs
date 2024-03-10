@@ -1,7 +1,11 @@
+using ShopWarehouse.Interfaces;
+
 namespace ShopWarehouse
 {
-    public class Product : IProduct
+    public class Product : IProduct, IReportable
     {
+        private static readonly string InvalidStringExceptionMessage = "Value cannot be empty of null";
+
         public string Title { get; private set; }
         public Money PriceForOne { get; private set; }
         public uint Amount { get; set; }
@@ -46,11 +50,16 @@ namespace ShopWarehouse
             }
         }
 
+        public string ToReportString()
+        {
+            return $"Product: {this.Title}. Price for one {this.Unit}: {this.PriceForOne}. Amount: {this.Amount}";
+        }
+
         private static void ValidateString(string input)
         {
             if (string.IsNullOrEmpty(input.Trim()))
             {
-                throw new ArgumentException("Value cannot be empty of null");
+                throw new ArgumentException(InvalidStringExceptionMessage);
             }
         }
         private static void ValidateStrings(string[] input)
