@@ -2,6 +2,9 @@ namespace ShopWarehouse.Interfaces
 {
     public interface IReportable
     {
-        string ToReportString();        
+        string Title { get; }
+        uint Amount { get; }
+        string Unit { get; }
+        string ToReportString();
     }
 }

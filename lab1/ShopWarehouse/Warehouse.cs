@@ -1,19 +1,23 @@
 using System.ComponentModel;
+using ShopWarehouse.Interfaces;
 
 namespace ShopWarehouse
 {
-    public class Warehouse : IWarehouse
+    public class Warehouse : IWarehouse, IImporter, IExporter
     {
         private static readonly string WarehouseEmptyExceptionMessage = "Warehouse empty. Nothing to export.";
         private static readonly string ProductDoesntExistExceptionMessage = "1 or more products to export don't exist in the warehouse";
         private static readonly string InvalidProductAmount = "Asking to export too much of 1 or more products.";
         private static readonly string InvalidReceiveExceptionMessage = "Must receive at least 1 product";
 
+
+        public int Id { get; private set; }
         public HashSet<Product> Products { get; private set; }
         public (IEnumerable<Product> Products, DateTime DateTime) LastShipment { get; private set; }
 
-        public Warehouse(List<Product> products, (IEnumerable<Product> products, DateTime date)? lastShipment = null)
+        public Warehouse(int id, List<Product> products, (IEnumerable<Product> products, DateTime date)? lastShipment = null)
         {
+            this.Id = id;
             this.Products = products.ToHashSet();
             this.LastShipment = lastShipment ?? (products, DateTime.Now);
         }

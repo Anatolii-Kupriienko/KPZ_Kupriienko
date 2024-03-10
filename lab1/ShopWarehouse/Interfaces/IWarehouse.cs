@@ -7,7 +7,6 @@ namespace ShopWarehouse
 {
     public interface IWarehouse
     {
-        void ReceiveNewShipment(HashSet<Product> products);
-        void ExportProducts(HashSet<Product> products);
+        int Id { get; }
     }
 }
