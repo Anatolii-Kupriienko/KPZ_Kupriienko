@@ -1,6 +1,6 @@
 ﻿namespace ShopWarehouse;
 
-public class Money
+public class Money : IMoney
 {
     public uint Whole { get; set; }
     public uint Fraction { get; set; }
@@ -26,12 +26,11 @@ public class Money
 
     public static Money operator -(Money item1, Money item2)
     {
-        Money result = new Money();
-        if (item1.Whole < item2.Whole || (item1.Whole == item2.Whole && item1.Fraction < item2.Fraction))
+        ValidateMoneySubtraction(item1, item2);
+        Money result = new Money
         {
-            throw new InvalidOperationException("Minuend must be >= subtrahend");
-        }
-        result.Whole = item1.Whole - item2.Whole;
+            Whole = item1.Whole - item2.Whole
+        };
         if (item1.Fraction < item2.Fraction)
         {
             result.Fraction = 100 - (item2.Fraction - item1.Fraction);
@@ -42,5 +41,27 @@ public class Money
             result.Fraction = item1.Fraction - item2.Fraction;
         }
         return result;
+    }
+
+    public static Money operator +(Money item1, Money item2)
+    {
+        Money result = new Money();
+        uint fraction = item1.Fraction + item2.Fraction;
+        result.Whole = item1.Whole + item2.Whole;
+        if (fraction > 100)
+        {
+            fraction -= 100;
+            result.Whole++;
+        }
+        result.Fraction = fraction;
+        return result;
+    }
+
+    private static void ValidateMoneySubtraction(Money item1, Money item2)
+    {
+        if (item1.Whole < item2.Whole || (item1.Whole == item2.Whole && item1.Fraction < item2.Fraction))
+        {
+            throw new InvalidOperationException("Minuend must be >= subtrahend");
+        }
     }
 }
