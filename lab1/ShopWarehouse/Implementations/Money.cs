@@ -5,27 +5,28 @@ public class Money : IMoney
     private static readonly string InvalidFractionExceptionMessage = "Fraction must be <= 100";
     private static readonly string InvalidSubtractionOperandsExceptioMessage = "Minuend must be >= subtrahend";
 
-    public uint Whole { get; set; }
-    public uint Fraction
-    {
-        get
-        {
-            return this.Fraction;
-        }
-        set
-        {
-            ValidateFraction(value);
-            this.Fraction = value;
-        }
-    }
+    public uint Whole { get; private set; }
+    public uint Fraction { get; private set; }
 
     public Money() { }
 
     public Money(uint whole, uint fraction)
     {
-        ValidateFraction(fraction);
         this.Whole = whole;
         this.Fraction = fraction;
+    }
+
+    // I needed to do this because a function call inside a setter, calls it like 5 gazillion times 
+    // and causes a stack overflow
+    public void SetWhole(uint value)
+    {
+        this.Whole = value;
+    }
+
+    public void SetFraction(uint value)
+    {
+        ValidateFraction(value);
+        this.Fraction = value;
     }
 
     public void Print()
