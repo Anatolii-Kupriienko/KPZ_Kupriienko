@@ -5,6 +5,14 @@ namespace ShopWarehouse
 {
     public class Reporting : IReporting
     {
+        // RANT ABOUT MY CONCERNS OF THIS PART OF THE CODE STARTS
+        // these 2 methods do looks kinda similar, BUT that is just how it is with composing string reports I believe
+        // I could try to make this more flexible, like a builder, where you can choose options, or smth like that
+        // but that is too much IMO. Instead you can just create another implementation of the IReporting interface
+        // if you really want to do something like that, or just implement a report builder/reporter that you need
+        // for specific needs, I doubt that there would be too many separate needs, just give it a title/header field
+        // or smth. But I don't have any proper experience in actual working environment so I am probably wrong.
+        // But I am willing to step on this rake in the future to learn how ignorant I am rn the hard way. RANT OVER
         public void ReportExport(IEnumerable<IReportable> itemsExported, IExporter from, IImporter to)
         {
             string startingMessage = $"Export Report for {DateTime.Today} for warehouse №{from.Id}:\n";

@@ -1,4 +1,3 @@
-using System.ComponentModel;
 using ShopWarehouse.Interfaces;
 
 namespace ShopWarehouse
