@@ -28,8 +28,8 @@ namespace FactoryClassLib.Distributors
                 SubscriptionTypes.Educational => new EducationalSubscription(),
                 _ => throw new Exception("Invalid subscription type")
             };
-
-            return subscription.Continue(TimeSpan.FromDays(subscriptionDurationDays));
+            User.Subscription = subscription.Continue(TimeSpan.FromDays(subscriptionDurationDays));
+            return User.Subscription;
         }
     }
 }

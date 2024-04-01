@@ -60,8 +60,8 @@ namespace FactoryClassLib.Distributors
             {
                 ChooseSubscriptionDuration();
             }
-
-            return subscription.Continue(TimeSpan.FromDays((int)SubscriptionDurationDays));
+            User.Subscription = subscription.Continue(TimeSpan.FromDays((int)SubscriptionDurationDays));
+            return User.Subscription;
         }
     }
 }
