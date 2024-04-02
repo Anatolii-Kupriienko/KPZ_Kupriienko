@@ -1,5 +1,4 @@
-﻿using FactoryClassLib;
-using FactoryClassLib.Distributors;
+﻿using FactoryClassLib.Distributors;
 using FactoryClassLib.Subscriptions;
 
 //The different subscriptions' createtion approaches are not that much different tbh
