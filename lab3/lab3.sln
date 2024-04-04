@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lab3", "Adapter", "{F173C57E-2CD2-482D-86A9-8C34C5673B5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterClassLib", "Adapter\AdapterClassLib\AdapterClassLib.csproj", "{714708FC-E024-41D1-B8E9-014B663B8E8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterDemo", "Adapter\AdapterDemo\AdapterDemo.csproj", "{503ADDF7-256D-4628-867A-03BECC14D247}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{714708FC-E024-41D1-B8E9-014B663B8E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714708FC-E024-41D1-B8E9-014B663B8E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714708FC-E024-41D1-B8E9-014B663B8E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714708FC-E024-41D1-B8E9-014B663B8E8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{503ADDF7-256D-4628-867A-03BECC14D247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503ADDF7-256D-4628-867A-03BECC14D247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503ADDF7-256D-4628-867A-03BECC14D247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503ADDF7-256D-4628-867A-03BECC14D247}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{714708FC-E024-41D1-B8E9-014B663B8E8E} = {F173C57E-2CD2-482D-86A9-8C34C5673B5A}
+		{503ADDF7-256D-4628-867A-03BECC14D247} = {F173C57E-2CD2-482D-86A9-8C34C5673B5A}
+	EndGlobalSection
+EndGlobal
