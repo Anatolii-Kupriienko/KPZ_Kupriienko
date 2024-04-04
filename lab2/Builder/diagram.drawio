@@ -1,0 +1,168 @@
+<mxfile host="65bd71144e">
+    <diagram id="rK07Cq7LHnfbDZBeHPGz" name="Page-1">
+        <mxGraphModel dx="1934" dy="1747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="ICharacterBuilder" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="70" width="280" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="SetName(string name) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="2">
+                    <mxGeometry x="-10" y="20" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="SetClass(string charClass) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="2">
+                    <mxGeometry x="-10" y="40" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="SetNickname(string nickname) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="2">
+                    <mxGeometry x="-10" y="60" width="290" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="SetLevel(int level) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="2">
+                    <mxGeometry x="-10" y="80" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="SetHealth(int health) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="2">
+                    <mxGeometry x="-10" y="100" width="240" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Build() : Character" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="2">
+                    <mxGeometry x="-10" y="120" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="HeroBuilder" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry y="320" width="285" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="_character : Character" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9">
+                    <mxGeometry x="-5" y="25" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="SetName(string name) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9">
+                    <mxGeometry x="-5" y="50" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="SetClass(string charClass) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9">
+                    <mxGeometry x="-5" y="70" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="SetNickname(string nickname) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9">
+                    <mxGeometry x="-5" y="90" width="290" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="SetLevel(int level) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9">
+                    <mxGeometry x="-5" y="110" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="SetHealth(int health) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9">
+                    <mxGeometry x="-5" y="130" width="240" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Build() : Character" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9">
+                    <mxGeometry x="-5" y="150" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="9">
+                    <mxGeometry y="50" width="280" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="EnemyBuilder" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="320" width="285" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="_character : Character" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="19">
+                    <mxGeometry x="-5" y="25" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="SetName(string name) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="19">
+                    <mxGeometry x="-5" y="50" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="SetClass(string charClass) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="19">
+                    <mxGeometry x="-5" y="70" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="SetNickname(string nickname) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="19">
+                    <mxGeometry x="-5" y="90" width="290" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="SetLevel(int level) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="19">
+                    <mxGeometry x="-5" y="110" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="SetHealth(int health) : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="19">
+                    <mxGeometry x="-5" y="130" width="240" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Build() : Character" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="19">
+                    <mxGeometry x="-5" y="150" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="19">
+                    <mxGeometry y="50" width="280" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="endArrow=block;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="9" target="2">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="220" y="330" as="sourcePoint"/>
+                        <mxPoint x="380" y="330" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="143" y="280"/>
+                            <mxPoint x="310" y="280"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="" style="endArrow=block;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="19">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="220" y="330" as="sourcePoint"/>
+                        <mxPoint x="310" y="220" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="443" y="280"/>
+                            <mxPoint x="310" y="280"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="Director" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="-120" width="230" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="_builder : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="31">
+                    <mxGeometry x="-10" y="20" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="Builder : ICharacterBuilder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="31">
+                    <mxGeometry x="-6" y="40" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="Create(string name, string charClass, &lt;br&gt;string nickname, int level, int health) : void" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="31">
+                    <mxGeometry x="-10" y="70" width="250" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="31">
+                    <mxGeometry y="60" width="230" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Character" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry x="610" y="50" width="200" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Name : string" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="36">
+                    <mxGeometry x="-5" y="20" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Class : string" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="36">
+                    <mxGeometry x="-6" y="40" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="Type : string" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="36">
+                    <mxGeometry x="-8" y="57" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="Nickname : string" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="36">
+                    <mxGeometry x="-10" y="77" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Level : int" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="36">
+                    <mxGeometry x="-5" y="93" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="Health : int" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="36">
+                    <mxGeometry x="-8" y="112" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="DoStuff(string stuff) : void" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="36">
+                    <mxGeometry x="-9" y="133" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="ToString() : string" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="36">
+                    <mxGeometry x="-6" y="154" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="36">
+                    <mxGeometry y="132" width="200" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="endArrow=open;html=1;rounded=0;align=center;verticalAlign=bottom;dashed=1;endFill=0;labelBackgroundColor=none;exitX=0.48;exitY=1.025;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="34" target="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="360" y="120" as="sourcePoint"/>
+                        <mxPoint x="520" y="120" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" value="Dependency1" style="resizable=0;html=1;align=center;verticalAlign=top;labelBackgroundColor=none;" connectable="0" vertex="1" parent="46">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="endArrow=open;html=1;rounded=0;align=center;verticalAlign=bottom;dashed=1;endFill=0;labelBackgroundColor=none;exitX=1.004;exitY=0.093;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.072;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2" target="36">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="360" y="120" as="sourcePoint"/>
+                        <mxPoint x="520" y="120" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="Dependency1" style="resizable=0;html=1;align=center;verticalAlign=top;labelBackgroundColor=none;" connectable="0" vertex="1" parent="48">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
