@@ -2,14 +2,17 @@ namespace BridgeClassLib
 {
     public class Circle : Shape
     {
-        public override void RenderAsPixels()
+        public Circle(IRenderer renderer) : base(renderer)
         {
-            System.Console.WriteLine("Drawing circle as pixels");
         }
-
-        public override void RenderAsVector()
+        public void SetRenderer(IRenderer renderer)
         {
-            System.Console.WriteLine("Drawing circle as vector");
+            Renderer = renderer;
+        }
+        public override void Render()
+        {
+            Console.Write("Drawing circle ");
+            Renderer.Render();
         }
     }
 }

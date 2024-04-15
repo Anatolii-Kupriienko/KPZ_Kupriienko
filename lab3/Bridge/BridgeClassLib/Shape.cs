@@ -2,14 +2,15 @@ namespace BridgeClassLib
 {
     public class Shape
     {
-        public virtual void RenderAsPixels()
+        public IRenderer Renderer { get; protected set; }
+        public Shape(IRenderer renderer)
         {
-            System.Console.WriteLine("Rendering shape as pixels");
+            Renderer = renderer;
         }
-
-        public virtual void RenderAsVector()
+        public virtual void Render()
         {
-            System.Console.WriteLine("Rendering shape as vector");
+            Console.WriteLine("Rendering shape");
+            Renderer.Render();
         }
     }
 }

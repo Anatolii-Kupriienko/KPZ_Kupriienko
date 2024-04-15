@@ -2,14 +2,17 @@ namespace BridgeClassLib
 {
     public class Square : Shape
     {
-        public override void RenderAsPixels()
+        public Square(IRenderer renderer) : base(renderer)
         {
-            System.Console.WriteLine("Drawing square as pixels");
         }
-
-        public override void RenderAsVector()
+        public void SetRenderer(IRenderer renderer)
         {
-            System.Console.WriteLine("Drawing square as vector");
+            Renderer = renderer;
+        }
+        public override void Render()
+        {
+            Console.Write("Drawing square ");
+            Renderer.Render();
         }
     }
 }

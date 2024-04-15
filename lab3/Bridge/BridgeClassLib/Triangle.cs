@@ -2,14 +2,17 @@ namespace BridgeClassLib
 {
     public class Triangle : Shape
     {
-        public override void RenderAsPixels()
+        public Triangle(IRenderer renderer) : base(renderer)
         {
-            System.Console.WriteLine("Drawing triangle as pixels");
         }
-
-        public override void RenderAsVector()
+        public void SetRenderer(IRenderer renderer)
         {
-            System.Console.WriteLine("Drawing triangle as vector");
+            Renderer = renderer;
+        }
+        public override void Render()
+        {
+            Console.Write("Drawing triangle ");
+            Renderer.Render();
         }
     }
 }

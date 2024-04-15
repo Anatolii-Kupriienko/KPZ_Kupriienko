@@ -1,21 +1,21 @@
 ﻿
 using BridgeClassLib;
 
-Circle circle = new Circle();
-Square square = new Square();
-Triangle triangle = new Triangle();
+IRenderer renderer = new PixelRenderer();
+Circle circle = new Circle(renderer);
+Square square = new Square(renderer);
+Triangle triangle = new Triangle(renderer);
 
-Renderer renderer = new Renderer(RenderTypes.Pixels);
+circle.Render();
+square.Render();
+triangle.Render();
 
-renderer.Render(circle);
-renderer.Render(square);
-renderer.Render(triangle);
+IRenderer vectorRenderer = new VectorRenderer();
 
-renderer = new Renderer(RenderTypes.Vector);
+circle.SetRenderer(vectorRenderer);
+square.SetRenderer(vectorRenderer);
+triangle.SetRenderer(vectorRenderer);
 
-renderer.Render(circle);
-renderer.Render(square);
-renderer.Render(triangle);
-
-//I don't quite understand how this works, maybe this is not the best example to show the bridge pattern
-//or maybe I am just dumb.
+circle.Render();
+square.Render();
+triangle.Render();
