@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SingletonDemo
 {
-    public class Authenticator
+    sealed public class Authenticator
     {
         private static Authenticator instance;
         private static readonly object lockObject = new object();
