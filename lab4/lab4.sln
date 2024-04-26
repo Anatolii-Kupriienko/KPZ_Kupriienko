@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorClassLibrary", ".\M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorDemo", "Mediator\MediatorDemo\MediatorDemo.csproj", "{99E853EA-F0A8-4507-92E4-D7DB0E3CD018}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Observer", "Observer", "{A5339217-8A86-4E25-AA35-5D2CDE87C963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverClassLibrary", "Observer\ObserverClassLibrary\ObserverClassLibrary.csproj", "{10411F1A-9C4E-4C54-89B6-25C2D5ACCC5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverDemo", "Observer\ObserverDemo\ObserverDemo.csproj", "{B9A6328F-8371-48C2-A146-0F5321472606}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +32,19 @@ Global
 		{99E853EA-F0A8-4507-92E4-D7DB0E3CD018}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99E853EA-F0A8-4507-92E4-D7DB0E3CD018}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99E853EA-F0A8-4507-92E4-D7DB0E3CD018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10411F1A-9C4E-4C54-89B6-25C2D5ACCC5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10411F1A-9C4E-4C54-89B6-25C2D5ACCC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10411F1A-9C4E-4C54-89B6-25C2D5ACCC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10411F1A-9C4E-4C54-89B6-25C2D5ACCC5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A6328F-8371-48C2-A146-0F5321472606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A6328F-8371-48C2-A146-0F5321472606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A6328F-8371-48C2-A146-0F5321472606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A6328F-8371-48C2-A146-0F5321472606}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A0B0FED9-3C87-4ADD-A6D3-EE09F32FC5E7} = {4E7533FD-6F8E-45AB-A049-102C1FEF92F9}
 		{99E853EA-F0A8-4507-92E4-D7DB0E3CD018} = {4E7533FD-6F8E-45AB-A049-102C1FEF92F9}
+		{10411F1A-9C4E-4C54-89B6-25C2D5ACCC5A} = {A5339217-8A86-4E25-AA35-5D2CDE87C963}
+		{B9A6328F-8371-48C2-A146-0F5321472606} = {A5339217-8A86-4E25-AA35-5D2CDE87C963}
 	EndGlobalSection
 EndGlobal
